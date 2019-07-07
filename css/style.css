@@ -1,0 +1,30 @@
+body {
+  background: #333333;
+}
+#main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#my-name {
+  color: white;
+  font-family: Impact, sans-serif;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+p {
+  color: white;
+  font-family: Impact, sans-serif;
+  text-align: center;
+  letter-spacing: 3px;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: #E81CAF;
+  transition: color 0.3s ease;
+}

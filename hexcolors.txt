@@ -1,0 +1,3 @@
+amaranth: E81C4F
+torch red: ff0040
+charcoal: 464646
