@@ -1,3 +1,4 @@
-amaranth: E81C4F
-torch red: ff0040
-charcoal: 464646
+amaranth: #E81C4F
+torch red: #FF0033
+charcoal: #464646
+interesting blue: #9198e5

@@ -1,29 +1,14 @@
 body {
   /* background: #333333; */
-  background: linear-gradient(to right, #464646, #E81CAF);
-  background-size: 2000% 2000%;
-
-  -webkit-animation: GradientChange 15s ease-in-out infinite;
-  -moz-animation: GradientChange 15s ease-in-out infinite;
-  animation: GradientChange 15s ease-in-out infinite;
-}
-
-@-webkit-keyframes GradientChange {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50%}
-  100% { background-position: 0% 50%}
-}
-
-@-moz-keyframes GradientChange {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50%}
-  100% { background-position: 0% 50%}
+  /* background:#FF0033 */
+  background: linear-gradient(to right,white, #FF0033);
+  background-size: 300% 300%;
+  animation: GradientChange 5s forwards;
 }
 
 @keyframes GradientChange {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50%}
-  100% { background-position: 0% 50%}
+  0% {background-position: 0%}
+  100% {background-position: -50%}
 }
 
 #main {
@@ -38,6 +23,13 @@ body {
   font-family: Impact, sans-serif;
   text-align: center;
   letter-spacing: 10px;
+  animation: pulsate 2s;
+}
+
+@keyframes pulsate {
+  /* 0% {color: white;} */
+  50% {color: #FF0033;}
+  100% {color: white;}
 }
 
 p {
@@ -45,11 +37,13 @@ p {
   font-family: Impact, sans-serif;
   text-align: center;
   letter-spacing: 3px;
+  animation: pulsate 2s;
 }
 a {
   color: white;
+  animation: pulsate 2s;
 }
 a:hover {
-  color: #E81CAF;
-  transition: color 0.3s ease;
+  color: black;
+  transition: color 0.2s ease;
 }
