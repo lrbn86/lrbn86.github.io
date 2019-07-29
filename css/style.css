@@ -1,18 +1,13 @@
 body {
   /* background: #333333; */
-  /* background:#FF0033 */
-  background: linear-gradient(to right,white, #FF0033);
-  background-size: 300% 300%;
-  animation: GradientChange 5s forwards;
+  background:#FF0033
+
 }
 
-@keyframes GradientChange {
-  0% {background-position: 0%}
-  100% {background-position: -50%}
-}
 
 #main {
   position: fixed;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -23,27 +18,19 @@ body {
   font-family: Impact, sans-serif;
   text-align: center;
   letter-spacing: 10px;
-  animation: pulsate 2s;
+
 }
 
-@keyframes pulsate {
-  /* 0% {color: white;} */
-  50% {color: #FF0033;}
-  100% {color: white;}
-}
 
 p {
   color: white;
   font-family: Impact, sans-serif;
   text-align: center;
   letter-spacing: 3px;
-  animation: pulsate 2s;
 }
 a {
   color: white;
-  animation: pulsate 2s;
 }
 a:hover {
   color: black;
-  transition: color 0.2s ease;
 }
