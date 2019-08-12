@@ -1,0 +1,27 @@
+/* * {
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+} */
+
+
+a, body {
+  animation: changeBackground 1s  forwards;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+a:hover {
+  animation: none;
+  color: black;
+}
+
+@keyframes changeBackground {
+  from {background-color: white; color: black;}
+  to {background-color: #ff0033; color: white;}
+}
