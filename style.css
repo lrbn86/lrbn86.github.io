@@ -1,27 +1,49 @@
-/* * {
+/* STYLE FOR MAIN INDEX */
+* {
   font-family: Verdana, sans-serif;
-  text-align: center;
   margin: 0;
   padding: 0;
-} */
+  font-size: 1.5vw;
+}
 
+body {
+  background-color:#ff0033;
+  color: white;
+}
 
-a, body {
-  animation: changeBackground 1s  forwards;
+#home {
+  color: black;
+}
+
+#my-name {
+  font-size: 3vw;
+}
+
+#main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: black;
-
+  color: white;
 }
 
 a:hover {
-  animation: none;
+  animation-fill-mode: none;
   color: black;
 }
 
-@keyframes changeBackground {
-  from {background-color: white; color: black;}
-  to {background-color: #ff0033; color: white;}
+nav {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+#links {
+  margin-top: 25px;
 }
