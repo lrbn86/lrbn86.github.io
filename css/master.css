@@ -31,6 +31,7 @@ p {
 
 nav {
   padding: 10px;
+  padding-top: 25px;
   height: 30px;
   color: #FF0033;
   background-color: #333;
@@ -40,13 +41,14 @@ nav > a {
   padding: 10px;
   color: white;
   text-decoration: none;
+  background-color: black;
   letter-spacing: 0.5px;
   transition: font-size 0.5s;
 }
 
 nav > a:hover {
   font-size: 15px;
-  color: #FF0033;
+  background-color: #FF0033;
 }
 
 a {
