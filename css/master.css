@@ -92,6 +92,10 @@ a {
   padding-left: 20px;
 }
 
+#description {
+  padding: 25px;
+}
+
 .project {
   padding: 15px;
 }
