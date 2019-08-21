@@ -1,0 +1,95 @@
+/* THIS CSS FILE IS RESPONSIBLE FOR ALL HTML PAGES */
+* {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+h1 {
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+#my-name {
+  padding: 0px;
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+
+#main-home {
+  padding-top: 100px;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+nav {
+  padding: 10px;
+  height: 30px;
+  color: #FF0033;
+  background-color: #333;
+}
+
+nav > a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: font-size 0.5s;
+}
+
+nav > a:hover {
+  font-size: 15px;
+  color: #FF0033;
+}
+
+a {
+  color: #FF0033;
+}
+
+#links i {
+  color: black;
+  padding: 30px;
+  font-size: 60px;
+  transition: font-size 0.5s;
+}
+
+#links i:hover {
+  color: #FF0033;
+  font-size: 55px;
+}
+
+#profile-pic {
+  padding: 15px;
+  text-align: center;
+}
+
+#profile-pic > img {
+  height: 192px;
+  width: 192px;
+  border-radius: 50%;
+  border: 5px solid #FF0033;
+}
+
+#main-about p {
+  padding: 10px;
+  text-align: left;
+}
+#main-projects p {
+  padding-left: 15px;
+  text-align: left;
+}
+
+.inner-content > a {
+  padding-left: 20px;
+}
+
+.project {
+  padding: 15px;
+}
