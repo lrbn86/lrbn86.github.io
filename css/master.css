@@ -99,3 +99,9 @@ a {
 .project {
   padding: 15px;
 }
+
+@media only screen and (max-width: 609px)  {
+  nav > a {
+    padding: 0.5em;
+  }
+}
