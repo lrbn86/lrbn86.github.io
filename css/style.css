@@ -1,0 +1,11 @@
+html {
+  height: 100%;
+}
+body {
+  /* background-color: #ff0033; */
+  background: linear-gradient(#ff0033, red, black)
+}
+
+h1 {
+  color: white;
+}
