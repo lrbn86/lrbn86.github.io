@@ -9,106 +9,90 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" href="images/Favicon.png" />
     <title>Brandon Nguyen</title>
   </head>
   <body>
-    <div id="flex-container">
-      <div id="sidebar">
-        <div id="avatar">
-          <img id="profile-img" src="images/Logo.png" />
-        </div>
-        <ul id="navigation-links">
-          <li id="nav-about">About</li>
-          <li id="nav-projects">Projects</li>
-        </ul>
-        <div id="social-links">
-          <a href="https://www.github.com/lrbn86" title="Link to GitHub profile"
-            ><i class="fa fa-github-square fa-3x"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/lrbn"
-            title="Link to LinkedIn profile"
-            ><i class="fa fa-linkedin-square fa-3x"></i
-          ></a>
-        </div>
-      </div>
-      <!-- Begin About Section -->
-      <div id="about-section">
-        <h1>About</h1>
-        <p id="desc">
-          Hi, I'm Brandon Nguyen and I am a software developer based in Indiana,
-          USA. I have experience in developing apps for desktop, mobile, and
-          web. I am actively seeking for internships or full time positions for
-          software development! I am also open for collaboration opportunities
-          as well!
-        </p>
-        <p>You can reach me at LRBN86 [at] GMAIL [dot] COM</p>
-      </div>
-      <!-- End About Section -->
-
-      <!-- Begin Projects Section -->
-      <div id="projects-section">
-        <h1>Projects</h1>
-        <div class="projects-gallery">
-          <h2>To-Do List Web App</h2>
-          <h5>Technologies Used: React</h5>
-          <div class="project-desc">
-            <p>
-              A web app for creating to-do lists.
-            </p>
+    <div id="app">
+      <header>
+        <h1 id="header-title">Brandon Nguyen</h1>
+      </header>
+      <main>
+        <div id="about">
+          <h1>About</h1>
+          <p>
+            I am a web developer studying
+            <a
+              href="https://polytechnic.purdue.edu/degrees/web-programming-and-design?_ga=2.45434084.1540331927.1577575452-2040943329.1552612429"
+              >Web Programming & Design</a
+            >
+            at
+            <a href="https://polytechnic.purdue.edu/"
+              >Purdue Polytechnic Institute</a
+            >.
+          </p>
+          <p>
+            I am actively seeking internships or full-time opportunities. I am
+            also open to collaborative hobbyist projects as well.
+          </p>
+          <p>You can reach me at LRBN86 [at] GMAIL [dot] COM</p>
+          <div id="social-links">
+            <p>Connect with me!</p>
+            <a
+              href="https://www.github.com/lrbn86"
+              title="Link to GitHub profile"
+              ><i class="fa fa-github-square fa-4x"></i
+            ></a>
+            <a
+              href="https://www.twitter.com/lrbn86"
+              title="Link to Twitter profile"
+              ><i class="fa fa-twitter-square fa-4x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/lrbn"
+              title="Link to LinkedIn profile"
+              ><i class="fa fa-linkedin-square fa-4x"></i
+            ></a>
+            <a href="https://lrbn86blog.blogspot.com" title="Link to Blog"
+              ><i class="fa fa-rss-square fa-4x"></i
+            ></a>
           </div>
         </div>
-        <div class="projects-gallery">
-          <h2>Weather Web App</h2>
-          <h5>Technologies Used: Angular, Firebase</h5>
-          <div class="project-desc">
-            <p>
-              A web app for realtime report of the weather in any location.
-            </p>
-          </div>
+        <div id="projects">
+          <h1>Projects</h1>
+          <ul>
+            <li>
+              <a class="project-name" href="">myWeather</a>
+              <ul class="technologies">
+                <li>Technologies: HTML5, React, CSS</li>
+              </ul>
+            </li>
+            <li>
+              <a class="project-name" href="">Yes Nails Appointment App</a>
+              <ul class="technologies">
+                <li>Technologies: HTML5, Vanilla JS, CSS</li>
+              </ul>
+            </li>
+            <li>
+              <a class="project-name" href="http://ar-games.herokuapp.com/"
+                >AR Games</a
+              >
+              <ul class="technologies">
+                <li>Technologies: XHTML 1 Strict, Vanilla JS, CSS</li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="projects-gallery">
-          <h2>Chat Web App</h2>
-          <h5>Technologies Used: Vue</h5>
-          <div class="project-desc">
-            <p>
-              A web app for online chatting.
-            </p>
-          </div>
-        </div>
-        <div class="projects-gallery">
-          <h2>Movies Search Web App</h2>
-          <h5>Technologies Used: React</h5>
-          <div class="project-desc">
-            <p>
-              A web app for searching movies.
-            </p>
-          </div>
-        </div>
-        <div class="projects-gallery">
-          <h2>AR Games Website</h2>
-          <h5>Technologies Used: HTML/CSS/JS, DigitalOcean, Heroku</h5>
-          <div class="project-desc">
-            <p>A website of curated Augmented Reality games.</p>
-            <p>
-              The site was originally hosted using LAMP hosting on DigitalOcean,
-              but now it is being deployed on Heroku.
-            </p>
-            <p>
-              I built this site to explore HTML, JS, and CSS as well as learning
-              how to do hosting.
-            </p>
-            <p>
-              <a href="https://ar-games.herokuapp.com/WWW/index.html"> Demo </a>
-            </p>
-            <p>
-              <a href="https://github.com/lrbn86/AR-Games"> Source </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- End Projects Section -->
+        <footer>
+          <small>&copy; 2019 Brandon Nguyen</small>
+        </footer>
+      </main>
     </div>
     <script src="js/app.js"></script>
   </body>

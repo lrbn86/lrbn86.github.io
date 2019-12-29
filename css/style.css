@@ -1,116 +1,63 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-h1 {
-  color: #ff0019;
+header {
+  background-color: black;
+  text-align: center;
+  padding: 40px;
+  height: 65px;
+}
+#header-title {
+  font-size: 62px;
+  color: white;
+}
+main {
+  border: 1px solid rgb(95, 95, 95);
+  border-radius: 5px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-  color: #c20114;
-}
-
-a:hover {
-  color: #c2011491;
-}
-
-#desc {
-  width: 600px;
-}
-
-p {
-  font-size: 20px;
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-bottom: 25px;
-}
-
-#sidebar {
-  padding-left: 15px;
-  padding-top: 5px;
-  width: 200px;
+#about,
+#projects {
+  padding: 15px;
 }
 
 #social-links {
-  padding: 10px;
-  margin-top: 30px;
-}
-#social-links i {
-  color: #c20114;
-  padding: 5px;
-  font-size: 55px;
-  transition: all 0.3s;
+  padding-top: 30px;
 }
 
-#social-links i:hover {
-  color: #c2011491;
-}
-
-#profile-img,
-#avatar {
-  width: 200px;
-  border-radius: 50%;
-}
-
-#profile-img {
-  text-align: center;
-}
-
-#navigation-links {
-  list-style-type: none;
-  text-align: center;
-}
-
-#navigation-links > li {
+#social-links > a {
   text-decoration: none;
-  display: block;
+  color: rgb(29, 29, 29);
+  padding: 3px;
 }
 
-#navigation-links > li {
-  font-size: 25px;
-  padding: 10px;
-  color: white;
-  border: 0.5px solid #343434;
-  background-color: #c20114;
-  border-radius: 15px;
-  transition: all 0.3s;
-  margin: 10px;
-  user-select: none;
-}
-#navigation-links > li:hover {
-  background-color: #c2011491;
-  cursor: pointer;
+#social-links > a:hover {
+  color: rgb(41, 41, 41);
 }
 
-#flex-container {
-  display: flex;
-}
-
-#about-section,
-#projects-section {
-  padding-left: 20px;
-}
-
-#projects-section {
-  display: none;
-}
-
-#projects-section {
-  width: 80%;
-}
-.projects-gallery {
+#projects > ul {
   padding: 15px;
-  margin-top: 15px;
-  border-radius: 10px;
-  margin-bottom: 25px;
+}
+.project-name {
+  font-size: 20px;
   color: black;
-  border: 0.5px solid #343434;
-  box-shadow: 1px 3px #c20114;
+  font-weight: bold;
 }
 
-.projects-icon {
-  width: 200px;
+.project-name:hover {
+  color: rgb(129, 129, 129);
+}
+.technologies {
+  margin-left: 20px;
+}
+
+footer {
+  background-color: silver;
+  text-align: center;
   padding: 5px;
 }
