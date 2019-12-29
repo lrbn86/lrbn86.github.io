@@ -37,7 +37,7 @@ main {
 }
 
 #social-links > a:hover {
-  color: silver;
+  color: red;
 }
 
 #projects > ul {
@@ -50,22 +50,18 @@ main {
 }
 
 .project-name {
-  font-size: 15px;
+  font-size: 20px;
   color: white;
   font-weight: bold;
   text-decoration: none;
   background-color: black;
-  border: 1px solid black;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
-  box-shadow: 2px 2px black;
   transition: all 0.2s;
 }
 
 .project-name:hover {
-  color: black;
-  background-color: white;
-  box-shadow: none;
+  background-color: red;
 }
 .project-desc {
   margin-left: 25px;
@@ -89,5 +85,8 @@ footer {
   #header-title {
     font-size: 32px;
     color: white;
+  }
+  .project-name {
+    font-size: 15px;
   }
 }
