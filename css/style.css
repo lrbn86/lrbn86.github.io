@@ -16,7 +16,6 @@ header {
 }
 main {
   border: 1px solid rgb(95, 95, 95);
-  border-radius: 5px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -34,10 +33,11 @@ main {
   text-decoration: none;
   color: black;
   padding: 3px;
+  transition: all 0.2s;
 }
 
 #social-links > a:hover {
-  color: rgb(41, 41, 41);
+  color: silver;
 }
 
 #projects > ul {
@@ -51,9 +51,10 @@ main {
 
 .project-name {
   font-size: 15px;
-  color: black;
+  color: white;
   font-weight: bold;
   text-decoration: none;
+  background-color: black;
   border: 1px solid black;
   padding: 5px;
   border-radius: 5px;
@@ -62,10 +63,9 @@ main {
 }
 
 .project-name:hover {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   box-shadow: none;
-  border: 1px solid white;
 }
 .project-desc {
   margin-left: 25px;
