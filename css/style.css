@@ -52,8 +52,12 @@ main {
 .project-name:hover {
   color: rgb(129, 129, 129);
 }
-.technologies {
+.project-desc {
   margin-left: 20px;
+}
+
+.project-desc > li > a {
+  text-decoration: none;
 }
 
 footer {
