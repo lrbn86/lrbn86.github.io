@@ -15,7 +15,9 @@ header {
   color: white;
 }
 main {
-  border: 1px solid rgb(95, 95, 95);
+  border-right: 1px solid rgb(95, 95, 95);
+  border-left: 1px solid rgb(95, 95, 95);
+  border-bottom: 1px solid rgb(95, 95, 95);
   max-width: 1440px;
   margin: 0 auto;
 }
