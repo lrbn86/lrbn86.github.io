@@ -77,11 +77,6 @@ main {
   text-decoration: none;
   color: rgb(41, 41, 41);
 }
-footer {
-  background-color: silver;
-  text-align: center;
-  padding: 5px;
-}
 
 @media (max-width: 700px) {
   #header-title {
