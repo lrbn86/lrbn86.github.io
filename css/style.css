@@ -15,10 +15,7 @@ header {
   color: white;
 }
 main {
-  border-right: 1px solid rgb(95, 95, 95);
-  border-left: 1px solid rgb(95, 95, 95);
-  border-bottom: 1px solid rgb(95, 95, 95);
-  max-width: 1440px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -65,17 +62,30 @@ main {
 .project-name:hover {
   background-color: red;
 }
-.project-desc {
+.desc-block {
   margin-left: 25px;
   padding: 15px;
 }
 
-.project-desc > li > a {
+.desc-block > li > a {
   text-decoration: none;
 }
-.project-desc > li > a:hover {
+.desc-block > li > a:hover {
   text-decoration: none;
   color: rgb(41, 41, 41);
+}
+
+.school-links {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 2px;
+  transition: all 0.2s;
+}
+
+.school-links:hover {
+  background-color: red;
 }
 
 @media (max-width: 700px) {
@@ -85,5 +95,8 @@ main {
   }
   .project-name {
     font-size: 15px;
+  }
+  p {
+    line-height: 35px;
   }
 }
