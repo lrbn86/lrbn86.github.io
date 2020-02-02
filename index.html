@@ -10,56 +10,62 @@
       @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
       * {
         font-family: "Poppins", sans-serif;
-        list-style-type: square;
+        /* list-style-type: square; */
       }
-      header {
-        text-align: center;
-      }
+
       body {
         margin: 0;
       }
-      h1 {
+
+      header,
+      footer {
+        text-align: center;
+      }
+
+      .section-heading {
+        font-size: 35px;
         background-color: black;
         color: white;
-        font-size: 35px;
         padding: 20px;
       }
+
       p {
         padding-left: 20px;
       }
+
       main {
-        max-width: 1200px;
+        max-width: 1220px;
         margin: 0 auto;
       }
+
       a {
         color: orange;
         transition: color 0.2s;
       }
+
       a:hover {
         cursor: pointer;
         color: rgba(255, 68, 0, 0.877);
       }
-      .projects {
+
+      .project {
         padding-left: 20px;
         margin-bottom: 35px;
       }
 
-      .projects > h3,
-      .projects > ul {
-        margin: 0;
+      .project-desc-list {
+        list-style-type: square;
       }
 
       footer {
-        margin-top: 100px;
         padding: 5px;
-        background-color: #eee;
-        text-align: center;
-        width: 100%;
+        background-color: #444;
       }
 
       footer > a {
-        padding: 15px;
+        padding-left: 15px;
       }
+
       @media screen and (max-width: 1000px) {
         header > img {
           width: 600px;
@@ -70,9 +76,11 @@
           padding: 25px;
         }
       }
+
       strong {
         color: orange;
       }
+
       @media screen and (max-width: 700px) {
         header > img {
           width: 300px;
@@ -90,7 +98,7 @@
     </header>
     <main>
       <section>
-        <h1>About</h1>
+        <h1 class="section-heading">About</h1>
         <p>
           I am an undergraduate studying Computer Graphics Technology with a
           focus on Web Programming & Design at
@@ -100,19 +108,7 @@
             >Purdue Polytechnic Institute</a
           >.
         </p>
-        <p>
-          Like many who first got into programming, my motivation to program
-          came from video games and after high school, I wanted a career that
-          involved software development. My formal higher education began in the
-          first year of Computer Science at Indiana University Bloomington, but
-          after some time I decided to transfer to Purdue University in West
-          Lafayette to continue studies in CS.
-        </p>
-        <p>
-          After taking several theory-heavy CS courses at Purdue, I wanted to
-          focus on a more practical area of CS and that's where I discovered the
-          world of web development and made the switch.
-        </p>
+        <p></p>
         <p>
           I am <strong>actively</strong> seeking
           <strong>internship and/or full-time</strong>
@@ -121,42 +117,18 @@
         </p>
       </section>
       <section>
-        <h1>Skills & Experience</h1>
-        <p>
-          I have been dabbling in a variety of dev tools and tech such as:
-        </p>
-        <ul>
-          <li>Python, Ruby, Java, C, C++, HTML, CSS, JavaScript, PHP, React</li>
-          <li>Visual Studio Code, Vim, Google Cloud Firestore, Web Hosting</li>
-          <li>... and more</li>
-        </ul>
-        <p>
-          I would like to consider myself as a <strong>generalist</strong>, but
-          I do like the idea of a T-shaped skillset. My design philosophy is
-          minimalism, simplicity, and refinement.
-        </p>
-        <p>
-          <a href="https://brandonnguyen3d.weebly.com/" target="_blank"
-            >I also practice on some 3D modeling.</a
-          >
-        </p>
-        <p>
-          I currently manage a recordkeeping web app for a family-owned nail
-          salon business Yes Nails in Kokomo, Indiana.
-        </p>
-      </section>
-      <section>
-        <h1>Projects</h1>
-        <div class="projects">
-          <h3>
+        <h1 class="section-heading">Projects</h1>
+        <div class="project">
+          <h3 class="project-name">
             AR Games -
             <a
+              class="project-link"
               href="https://thirsty-torvalds-3c1b8f.netlify.com/"
               target="_blank"
               >Link to website</a
             >
           </h3>
-          <ul>
+          <ul class="project-desc-list">
             <li>A prototype website for curated AR games.</li>
             <li>Technologies: HTML, CSS, JavaScript</li>
             <li>
@@ -170,14 +142,17 @@
             </li>
           </ul>
         </div>
-        <div class="projects">
-          <h3>
+        <div class="project">
+          <h3 class="project-name">
             myWeather -
-            <a href="https://competent-bohr-5cefbc.netlify.com/" target="_blank"
+            <a
+              class="project-link"
+              href="https://competent-bohr-5cefbc.netlify.com/"
+              target="_blank"
               >Link to web app</a
             >
           </h3>
-          <ul>
+          <ul class="project-desc-list">
             <li>
               A weather app that gives a report about the weather in a given
               location.
