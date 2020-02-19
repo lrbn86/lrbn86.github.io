@@ -14,11 +14,22 @@
 
       body {
         margin: 0;
+        background-image: linear-gradient(to bottom right, red, orange);
       }
 
       header,
       footer {
         text-align: center;
+      }
+
+      header > h1 {
+        font-size: 80px;
+        color: white;
+      }
+
+      section {
+        font-size: 20px;
+        color: white;
       }
 
       .section-heading {
@@ -38,18 +49,20 @@
       }
 
       a {
-        color: orange;
-        transition: color 0.2s;
+        color: black;
+        font-weight: bold;
+        transition: font-size 0.2s;
       }
 
       a:hover {
         cursor: pointer;
-        color: rgba(255, 68, 0, 0.877);
+        font-size: 15px;
       }
 
       .project {
         padding-left: 20px;
         margin-bottom: 35px;
+        color: white;
       }
 
       .project-desc-list {
@@ -58,7 +71,6 @@
 
       footer {
         padding: 5px;
-        background-color: #444;
       }
 
       footer > a {
@@ -66,18 +78,17 @@
       }
 
       @media screen and (max-width: 1000px) {
-        header > img {
-          width: 600px;
+        header > h1 {
+          font-size: 42px;
         }
         main {
-          font-size: 25px;
           margin: 0;
           padding: 25px;
         }
       }
 
       strong {
-        color: orange;
+        color: black;
       }
 
       @media screen and (max-width: 700px) {
@@ -90,7 +101,7 @@
   </head>
   <body>
     <header>
-      <img src="images/Header3.jpg" />
+      <h1><strong>B</strong>randon <strong>N</strong>guyen</h1>
     </header>
     <main>
       <section>
@@ -110,12 +121,33 @@
         <h1 class="section-heading">Projects</h1>
         <div class="project">
           <h3 class="project-name">
+            myWeather -
+
+            <a class="project-link" href="https://myweather86.herokuapp.com/" target="_blank">Link to web app</a>
+          </h3>
+          <ul class="project-desc-list">
+            <li>A weather app that uses the <a href="https://openweathermap.org/">OpenWeatherMap API</a> to give basic weather information.</li>
+            <li>Technologies: HTML, CSS, PHP</li>
+            <li>
+              Hosted with
+              <a href="https://www.heroku.com/" target="_blank">Heroku</a>
+            </li>
+            <li>
+              <a href="https://github.com/lrbn86/myWeather" target="_blank">Source Code on GitHub</a>
+            </li>
+            <li>
+              Note: Under normal security circumstances, the API key would normally be hidden. For demo purposes, the API key is visible in the source code.
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3 class="project-name">
             myNotes -
             <a class="project-link" href="https://my-notes86.netlify.com/" target="_blank">Link to web app</a>
           </h3>
           <ul class="project-desc-list">
             <li>
-              An app for taking some notes.
+              An app for jotting down some notes for everyday activities.
             </li>
             <li>Technologies: HTML, CSS, JavaScript</li>
             <li>
