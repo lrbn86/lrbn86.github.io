@@ -1,197 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="images/Favicon2.png" />
     <title>Brandon Nguyen</title>
-    <style type="text/css">
-      @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-      * {
-        font-family: "Poppins", sans-serif;
-      }
-
-      body {
-        margin: 0;
-        background-image: linear-gradient(to bottom right, red, orange);
-      }
-      
-      header,
-      footer {
-        text-align: center;
-      }
-
-      header > h1 {
-        font-size: 80px;
-        color: white;
-        background-color: black;
-      }
-
-      section {
-        font-size: 20px;
-        color: white;
-        background-color: black;
-        padding: 5px;
-        margin-bottom: 5px;
-      }
-
-      .section-heading {
-        font-size: 35px;
-        background-color: black;
-        color: white;
-        padding: 20px;
-      }
-
-      p {
-        padding-left: 20px;
-      }
-
-      main {
-        max-width: 1220px;
-        margin: 0 auto;
-      }
-
-      a {
-        color: orange;
-        font-weight: bold;
-        transition: font-size 0.2s;
-      }
-
-      a:hover {
-        cursor: pointer;
-        font-size: 19px;
-      }
-      .social-link:hover {
-        font-size: 15px;
-      }
-      .project-link:hover {
-        cursor: pointer;
-        font-size: 25px;
-      }
-
-      .project {
-        padding-left: 20px;
-        margin-bottom: 35px;
-        color: white;
-      }
-
-      .project-desc-list {
-        list-style-type: square;
-      }
-
-      footer {
-        padding: 5px;
-        background-color: black;
-      }
-
-      footer > a {
-        padding-left: 15px;
-      }
-
-      @media screen and (max-width: 1000px) {
-        header > h1 {
-          font-size: 42px;
-        }
-        main {
-          margin: 0;
-          padding: 25px;
-        }
-      }
-
-      strong {
-        color: orange;
-      }
-
-      @media screen and (max-width: 700px) {
-        header > img {
-          width: 300px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
-    <header>
-      <h1>Brandon Nguyen</h1>
-    </header>
-    <main>
-      <section>
-        <h1 class="section-heading">About</h1>
-        <p>
-          I am an undergraduate studying Computer Graphics Technology with a focus on Web Programming & Design at
-          <a href="https://polytechnic.purdue.edu/degrees/web-programming-and-design" target="_blank">Purdue Polytechnic Institute</a>.
-        </p>
-        <p></p>
-        <p>
-          I am <strong>actively</strong> seeking
-          <strong>internship and/or full-time</strong>
-          opportunities as well as collaborative hobbyist projects in software development.
-        </p>
-      </section>
-      <section>
-        <h1 class="section-heading">Projects</h1>
-        <div class="project">
-          <h3 class="project-name">
-            myWeather -
-
-            <a class="project-link" href="https://myweather86.herokuapp.com/" target="_blank">Link to web app</a>
-          </h3>
-          <ul class="project-desc-list">
-            <li>A weather app that uses the <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a> to give basic weather information.</li>
-            <li>Technologies: HTML, CSS, JS, PHP</li>
-            <li>
-              Hosted with
-              <a href="https://www.heroku.com/" target="_blank">Heroku</a> 
-            </li>
-            <li>
-              <a href="https://github.com/lrbn86/myWeather" target="_blank">Source Code on GitHub</a>
-            </li>
-          </ul>
+      <header class="v-header container">
+        <div class="video-wrap">
+          <video src="bg3.mp4" autoplay loop muted></video>
         </div>
-        <div class="project">
-          <h3 class="project-name">
-            myNotes -
-            <a class="project-link" href="https://my-notes86.netlify.com/" target="_blank">Link to web app</a>
-          </h3>
-          <ul class="project-desc-list">
-            <li>
-              An app for jotting down some notes for everyday activities.
-            </li>
-            <li>Technologies: HTML, CSS, JavaScript</li>
-            <li>
-              Hosted with
-              <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-            </li>
-            <li>
-              <a href="https://github.com/lrbn86/myNotes" target="_blank">Source Code on GitHub</a>
-            </li>
-          </ul>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+          <h1>Brandon Nguyen</h1>
+          <p>Software Developer</p>
+          <div class="social-links">
+            <a class="social-link" href="https://www.github.com/lrbn86" target="_blank" title="Link to GitHub profile"><i class="fa fa-github-square fa-4x"></i></a>
+            <a class="social-link" href="https://www.twitter.com/lrbn86" target="_blank" title="Link to Twitter profile"><i class="fa fa-twitter-square fa-4x"></i></a>
+            <a class="social-link" href="https://www.linkedin.com/in/lrbn86" target="_blank" title="Link to LinkedIn profile"><i class="fa fa-linkedin-square fa-4x"></i></a>
+            <a class="social-link" href="mailto:lrbn86@gmail.com" title="Email Brandon Nguyen"><i class="fa fa-envelope fa-4x"></i></a>
+          </div>
         </div>
-        <div class="project">
-          <h3 class="project-name">
-            AR Games -
-            <a class="project-link" href="https://ar-games.netlify.com/" target="_blank">Link to website</a>
-          </h3>
-          <ul class="project-desc-list">
-            <li>A prototype website for curated AR games</li>
-            <li>Technologies: HTML, CSS, JavaScript</li>
-            <li>
-              Hosted with
-              <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-            </li>
-            <li>
-              <a href="https://github.com/lrbn86/AR-Games" target="_blank">Source Code on GitHub</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <a class="social-link" href="https://www.github.com/lrbn86" target="_blank" title="Link to GitHub profile"><i class="fa fa-github-square fa-4x"></i></a>
-      <a class="social-link" href="https://www.twitter.com/lrbn86" target="_blank" title="Link to Twitter profile"><i class="fa fa-twitter-square fa-4x"></i></a>
-      <a class="social-link" href="https://www.linkedin.com/in/lrbn86" target="_blank" title="Link to LinkedIn profile"><i class="fa fa-linkedin-square fa-4x"></i></a>
-      <a class="social-link" href="mailto:lrbn86@gmail.com" title="Email Brandon Nguyen"><i class="fa fa-envelope fa-4x"></i></a>
-    </footer>
+      </header>
   </body>
 </html>
