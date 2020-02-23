@@ -10,7 +10,15 @@
   <body>
       <header class="v-header container">
         <div class="video-wrap">
-          <video src="bg3.mp4" playsinline autoplay loop muted preload="none"></video>
+          <?php 
+            function isMobile() {
+              return is_numeric(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), "mobile")); 
+            }
+            if (!isMobile()) {
+              echo "<video src=\"bg3.mp4\" autoplay loop muted></video>";
+            }
+          ?>
+          <!--<video src="bg3.mp4" playsinline autoplay loop muted preload="none"></video>-->
         </div>
         <div class="header-overlay"></div>
         <div class="header-content">
