@@ -113,4 +113,10 @@ body {
   .social-link {
     margin:0.5em;
   }
+  video {
+    display:none;
+  }
+  .header-overlay {
+    opacity:100%;
+  }
 }
