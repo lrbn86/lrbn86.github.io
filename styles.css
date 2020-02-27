@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+:root {
+  --main:red;
+}
 * {
   box-sizing:border-box;
 }
@@ -7,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family:"Poppins", sans-serif;
   margin:0;
   font-size:1rem;
   line-height:1.5;
@@ -24,6 +27,9 @@ body {
   padding-left:1rem;
   padding-right:1rem;
   margin:auto;
+}
+.container p {
+  margin:0;
 }
 .video-wrap {
   position:absolute;
@@ -43,7 +49,7 @@ body {
   position:absolute;
   top:0;
   left:0;
-  background:orangered;
+  background:var(--main);
   z-index:1;
   opacity:65%;
 }
@@ -60,12 +66,12 @@ body {
   font-size:1.5rem;
   display:block;
   padding-bottom:2rem;
-  margin-left: 20px;
+  margin-left:20px;
 }
 .social-link {
   margin:10px;
-  color: white;
-  transition: font-size 0.2s, opacity 0.2s;
+  color:white;
+  transition:font-size 0.2s, opacity 0.2s;
 }
 .social-link:hover {
   cursor:pointer;
@@ -73,26 +79,26 @@ body {
   opacity:75%;
 }
 .section {
-  padding: 10px 0;
+  padding:10px 0;
 }
 .section-links {
-  color: orangered;
-  transition: opacity 0.2s;
+  color:var(--main);
+  transition:opacity 0.2s;
 }
 .section-links:hover {
   cursor:pointer;
   opacity:75%;
 }
 .projects-list > li {
-  list-style: none;
-  margin-bottom: 30px;
+  list-style:none;
+  margin-bottom:30px;
 }
 .project-sublist {
-  list-style: square;
+  list-style:square;
 }
 .arrows {
   color:white;
-  transition: all 0.2s;
+  transition:all 0.2s;
 }
 .arrows i {
   margin-top:50px;
@@ -102,9 +108,17 @@ body {
   cursor:pointer;
   opacity:75%;
 }
+footer .social-links {
+  margin-top:50px;
+  margin-bottom:15px;
+  text-align:center;
+}
+footer .social-links > .social-link {
+  color:var(--main);
+}
 @media only screen and (max-width:960px) {
   .header-content h1 {
-    font-size: 35pt;
+    font-size:35pt;
   }
   .container {
     padding-left:3rem;
