@@ -1,24 +1,12 @@
-function showLogo() {
-  logo.fadeIn(1000);
-  logo.fadeOut(1000);
-}
+let name = $('#my-name');
+let logo = $('.my-logo');
+let socials = $('.social-links');
 
-function showName() {
-  name.slideDown(2000);
-}
-
-function showSocials() {
-  socials.slideDown(1000);
-}
+name.hide();
+logo.hide();
+socials.hide();
 
 $(document).ready(function() {
-  let name = $('#my-name');
-  let logo = $('.my-logo');
-  let socials = $('.social-links');
-  name.hide();
-  logo.hide();
-  socials.hide();
-
   function showLogo() {
     logo.fadeIn(1000);
     logo.fadeOut(1000, function() {

@@ -6,7 +6,7 @@
 body {
   color: #FAFAFAFA;
   animation-name: changeBG;
-  animation-duration: .2s;
+  animation-duration: 3s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
@@ -17,9 +17,16 @@ body {
 }
 
 .my-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+  text-align: center;
+}
+
+#my-name {
+  display: none;
+}
+
+.social-links {
+  display: none;
 }
 
 .social-link {
