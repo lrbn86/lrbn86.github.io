@@ -2,10 +2,6 @@ let name = $('#my-name');
 let logo = $('.my-logo');
 let socials = $('.social-links');
 
-name.hide();
-logo.hide();
-socials.hide();
-
 $(document).ready(function() {
   function showLogo() {
     logo.fadeIn(1000);
