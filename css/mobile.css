@@ -2,8 +2,24 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
+#logo {
+  display: block;
+  background: url('../assets/logo-bn.svg');
+  width: 68px;
+  height: 68px;
+  background-size: 68px 68px;
+}
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 0;
+  z-index: 1;
 }
 
 header h1 {
@@ -12,11 +28,32 @@ header h1 {
   padding: 0;
 }
 
-body {
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+}
 
+#main-nav li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+html, body {
+  scroll-behavior: smooth;
 }
 
 main {
+}
+
+#section-work, #section-about, #section-contact {
+  scroll-margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#section-about, #section-contact {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 #project-gallery {
@@ -38,6 +75,7 @@ main {
 .project:hover {
   border-radius: 5px;
   box-shadow: 0px 0px 0px transparent;
+  opacity: .9;
 }
 
 .project > .project-title {
@@ -72,15 +110,6 @@ main {
   margin: 10px;
 }
 
-#resume-link {
-  text-align: center;
-  margin: 25px;
-}
-
-#resume-link a {
-  background-color: #0094C6;
-  color: #fff;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 5px;
+footer {
+  margin-top: 50px;
 }
