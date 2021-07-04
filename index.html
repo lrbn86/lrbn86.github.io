@@ -4,86 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="./assets/logo-bn.svg" />
     <title>Brandon Nguyen</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" media="screen and (min-width: 320px)" href="./css/mobile.css" />
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./css/desktop.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="./js/jquery-3.5.1.min.js" defer></script>
-    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
-      <a id="logo" href="/"></a>
-      <nav id="main-nav">
+      <h1>Brandon Nguyen</h1>
+      <h2>Web Design &amp; Development</h2>
+      <div class="social-links">
         <ul>
-          <li id="nav-work">Work</li>
-          <li id="nav-about">About</li>
+          <li><a href="https://github.com/lrbn86"><i class="fa fa-5x fa-github-square" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:brandonnguyendev@gmail.com"><i class="fa fa-5x fa-envelope" aria-hidden="true"></i></a></li>
         </ul>
-      </nav>
-    </header> <!-- end header -->
+      </div>
+    </header>
     <main>
-      <section id="section-work">
-        <div id="project-gallery">
-          <div class="project">
-            <p class="project-title">User Experience Design</p>
-            <img src="./assets/thumbnails/ux_thumbnail.png" />
-            <a href="https://github.com/lrbn86/CGT256"></a>
+      <div class="projects-list">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium possimus qui sint sunt ullam nisi iusto ex! Necessitatibus minus, ut accusantium laudantium beatae at iure quibusdam, modi delectus eaque quo!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio et culpa eos at numquam ad error modi perspiciatis, dicta tempore laborum rerum obcaecati temporibus. Sapiente laboriosam excepturi cumque tempore molestias!</p>
+          <div class="project-buttons">
+            <a href="https://www.tradingview.com/chart/RJeirHbR/" target="_blank">Source</a>
+            <a href="https://www.google.com/" target="_blank">Demo</a>
           </div>
-          <div class="project">
-            <p class="project-title">Technical Writing</p>
-            <img src="./assets/thumbnails/techwriting_thumbnail.png" />
-            <a href="https://github.com/lrbn86/ENGL421"></a>
-          </div>
-          <div class="project">
-            <p class="project-title">Interactive & Dynamic Media</p>
-            <img src="./assets/thumbnails/jquery_thumbnail.png" />
-            <a href="https://github.com/lrbn86/CGT353"></a>
-          </div>
-          <div class="project">
-            <p class="project-title">Data Integration w/ PHP & SQL</p>
-            <img src="./assets/thumbnails/php_thumbnail.svg" />
-            <a href="https://github.com/lrbn86/CGT356-Labs"></a>
-          </div>
-          <div class="project">
-            <p class="project-title">myWeather</p>
-            <img src="./assets/thumbnails/weather_thumbnail.png" />
-            <a href="https://github.com/lrbn86/myWeather"></a>
-          </div>
-          <div class="project">
-            <p class="project-title">myNotes</p>
-            <img src="./assets/thumbnails/notes_thumbnail.png" />
-            <a href="https://github.com/lrbn86/myNotes"></a>
-          </div>
-          <div class="project">
-            <p class="project-title">343-SPM</p>
-            <img src="./assets/thumbnails/343_thumbnail.png" />
-            <a href="https://github.com/lrbn86/343-SPM"></a>
-          </div>
-          <div class="project">
-            <p class="project-title">AR Games</p>
-            <img src="./assets/thumbnails/ar_thumbnail.png" />
-            <a href="https://github.com/lrbn86/AR-Games"></a>
-          </div>
-        </div> <!-- end project-gallery -->
-      </section> <!-- end section-work -->
-      <section id="section-about">
-        <h1>Hello!</h1>
-        <p>I'm Brandon and I enjoy creating experiences through website and web application development.</p>
-        <p>I am currently studying Web Programming and Design at <a href="https://polytechnic.purdue.edu/degrees/web-programming-and-design">Purdue University</a> with expected graduation in May 2022.</p>
-        <p>I have experience in full stack development and UX/UI design. I also have working knowledge of computer graphics (OpenGL and WebGL) and video/audio editing.</p>
-        <p>I am looking for opportunities to work on something new!</p>
-      </section> <!-- end section about -->
-      <footer>
-        <h3 style="text-align: center;">Contact Me</h3>
-        <div class="social-links">
-          <a class="social-link" href="https://www.github.com/lrbn86" title="Link to GitHub profile"><i class="fa fa-github-square fa-5x"></i></a>
-          <a class="social-link" href="https://www.linkedin.com/in/lrbn86" title="Link to LinkedIn profile"><i class="fa fa-linkedin-square fa-5x"></i></a>
-          <a class="social-link" href="mailto:brandonnguyendev@gmail.com" title="Email Brandon Nguyen"><i class="fa fa-envelope-square fa-5x"></i></a>
         </div>
-      </footer> <!-- end footer -->
+      </div> <!-- projects-list -->
     </main>
+    <footer>
+    </footer>
   </body>
 </html>
